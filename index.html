@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEA Catering - Healthy Meals, Anytime, Anywhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SEA Catering</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu / Meal Plans</a></li>
+                <li><a href="#subscription" class="nav-link">Subscription</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Healthy food background" class="hero-bg-image">
+            </div>
+            <div class="hero-content">
+                <h2>SEA Catering</h2>
+                <p class="slogan">"Healthy Meals, Anytime, Anywhere"</p>
+                <p class="hero-description">Welcome to SEA Catering - your premier customizable healthy meal service with delivery all across Indonesia. What started as a small business has quickly become a nationwide sensation!</p>
+                <button class="cta-button" onclick="scrollToSection('menu')">Explore Our Meal Plans</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Welcome to SEA Catering</h2>
+                <p>SEA Catering is Indonesia's premier customizable healthy meal delivery service. What started as a small business has quickly become a nationwide sensation, transforming how people access nutritious, delicious meals across the country.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3>🍽️ Meal Customization</h3>
+                        <p>Personalize your meals according to your dietary preferences and nutritional needs</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🚚 Nationwide Delivery</h3>
+                        <p>We deliver to major cities across Indonesia, bringing healthy meals right to your doorstep</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📊 Detailed Nutritional Information</h3>
+                        <p>Get complete nutritional breakdowns for every meal to help you meet your health goals</p>
+                    </div>
+                    <div class="feature">
+                        <h3>⚡ Fresh & Fast</h3>
+                        <p>Fresh ingredients prepared daily and delivered quickly to maintain quality and taste</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>Our Meal Plans</h2>
+                <div class="meal-plans-grid">
+                    <div class="meal-plan-card">
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Diet Plan - Healthy salad">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Diet Plan</h3>
+                            <div class="price">Rp30.000<span>/meal</span></div>
+                        </div>
+                        <div class="plan-content">
+                            <p>Perfect for weight management and healthy living. Low-calorie, nutrient-dense meals designed by nutritionists.</p>
+                            <ul class="plan-features">
+                                <li>✓ Low calorie options</li>
+                                <li>✓ High fiber content</li>
+                                <li>✓ Portion controlled</li>
+                                <li>✓ Fresh vegetables</li>
+                            </ul>
+                        </div>
+                        <button class="plan-btn" onclick="openPlanModal('diet')">See More Details</button>
+                    </div>
+
+                    <div class="meal-plan-card featured">
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1546554137-f86b9593a222?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Protein Plan - Grilled chicken">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Protein Plan</h3>
+                            <div class="price">Rp40.000<span>/meal</span></div>
+                        </div>
+                        <div class="plan-content">
+                            <p>Ideal for fitness enthusiasts and muscle building. High-protein meals to support your active lifestyle.</p>
+                            <ul class="plan-features">
+                                <li>✓ High protein content</li>
+                                <li>✓ Lean meats & fish</li>
+                                <li>✓ Post-workout recovery</li>
+                                <li>✓ Balanced nutrients</li>
+                            </ul>
+                        </div>
+                        <button class="plan-btn" onclick="openPlanModal('protein')">See More Details</button>
+                    </div>
+
+                    <div class="meal-plan-card">
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Royal Plan - Gourmet meal">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Royal Plan</h3>
+                            <div class="price">Rp60.000<span>/meal</span></div>
+                        </div>
+                        <div class="plan-content">
+                            <p>Premium dining experience with gourmet ingredients. The ultimate in healthy luxury dining.</p>
+                            <ul class="plan-features">
+                                <li>✓ Premium ingredients</li>
+                                <li>✓ Gourmet preparation</li>
+                                <li>✓ Larger portions</li>
+                                <li>✓ Exclusive recipes</li>
+                            </ul>
+                        </div>
+                        <button class="plan-btn" onclick="openPlanModal('royal')">See More Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscription" class="section">
+            <div class="container">
+                <h2>Subscribe to Your Perfect Meal Plan</h2>
+                <p>Join thousands of satisfied customers across Indonesia</p>
+                
+                <form class="subscription-form" id="subscriptionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Active Phone Number *</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Plan Selection *</label>
+                        <div class="plan-selection">
+                            <label class="radio-option">
+                                <input type="radio" name="plan" value="diet" data-price="30000" required>
+                                <span>Diet Plan - Rp30.000/meal</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="plan" value="protein" data-price="40000" required>
+                                <span>Protein Plan - Rp40.000/meal</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="plan" value="royal" data-price="60000" required>
+                                <span>Royal Plan - Rp60.000/meal</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Meal Type *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="mealType" value="breakfast">
+                                <span>Breakfast</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="mealType" value="lunch">
+                                <span>Lunch</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="mealType" value="dinner">
+                                <span>Dinner</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Delivery Days *</label>
+                        <div class="checkbox-group days-selection">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="monday">
+                                <span>Monday</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="tuesday">
+                                <span>Tuesday</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="wednesday">
+                                <span>Wednesday</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="thursday">
+                                <span>Thursday</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="friday">
+                                <span>Friday</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="saturday">
+                                <span>Saturday</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="deliveryDays" value="sunday">
+                                <span>Sunday</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="allergies">Allergies / Dietary Restrictions</label>
+                        <textarea id="allergies" name="allergies" rows="3" placeholder="Please list any allergies or dietary restrictions..."></textarea>
+                    </div>
+
+                    <div class="price-calculator">
+                        <h3>Total Monthly Price: <span id="totalPrice">Rp0</span></h3>
+                        <p class="price-formula">Formula: (Plan Price) × (Meal Types) × (Delivery Days) × 4.3</p>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonial-slider" id="testimonialSlider">
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-card">
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                                <p>"SEA Catering has transformed my eating habits! The Diet Plan helped me lose 10kg in 3 months."</p>
+                                <h4>- Sarah, Jakarta</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                                <p>"As a busy professional, the Protein Plan gives me the energy I need for my workouts. Highly recommended!"</p>
+                                <h4>- Ahmad, Surabaya</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                                <p>"The Royal Plan is absolutely delicious! Gourmet healthy food delivered right to my door."</p>
+                                <h4>- Maya, Bandung</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                        <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+                    </div>
+                </div>
+
+                <div class="testimonial-form-section">
+                    <h3>Share Your Experience</h3>
+                    <form class="testimonial-form" id="testimonialForm">
+                        <div class="form-group">
+                            <label for="customerName">Your Name *</label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewMessage">Your Review *</label>
+                            <textarea id="reviewMessage" name="reviewMessage" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Rating *</label>
+                            <div class="star-rating" id="starRating">
+                                <span class="star" data-rating="1">⭐</span>
+                                <span class="star" data-rating="2">⭐</span>
+                                <span class="star" data-rating="3">⭐</span>
+                                <span class="star" data-rating="4">⭐</span>
+                                <span class="star" data-rating="5">⭐</span>
+                            </div>
+                            <input type="hidden" id="ratingValue" name="rating" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-detail">
+                        <h3>Manager</h3>
+                        <p><strong>Brian</strong></p>
+                        <p>📞 08123456789</p>
+                    </div>
+                    <div class="contact-detail">
+                        <h3>Customer Service</h3>
+                        <p>📧 info@seacatering.com</p>
+                        <p>🕒 Available 24/7</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SEA Catering - "Healthy Meals, Anytime, Anywhere" | Manager: Brian | Phone: 08123456789</p>
+        </div>
+    </footer>
+
+    <!-- Modal for meal plan details -->
+    <div id="planModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePlanModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
